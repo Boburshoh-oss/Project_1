@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>The conntecting with SENIOR DEVELOPER </title>
+
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #000;
+    overflow-x: hidden;
+}
+.card{
+    border: none;
+}
+.row{
+    margin-top: 17rem;
+}
+.row .card{
+    position: absolute;
+    width: 340px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    perspective: 600px;
+    transition: .5s;
+}
+
+.card .oldi{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: .5s;
+    box-shadow: 0 0 15px blue;
+}
+.card:hover .oldi{
+    transform: rotateX(-180deg);
+}
+.card .back{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: .5s;
+    border:1px solid red;
+    box-shadow: 0 0 15px blue;
+
+}
+.card:hover .back{
+    transform: rotateX(0deg);
+}
+.back .icons{
+    color: #fff;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+.icons h2{
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+h2 span{
+    font-size: 16px;
+}
+.socialIcons{
+    padding: 10px 0;
+}
+.socialIcons a{
+    display: inline-block;
+    background-color: #262626;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: .5s;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    margin: 0 5px;
+}
+.socialIcons a:hover{
+    background-color: darkmagenta;
+}
+.card .back::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+.clear-both{
+    clear: both;
+}
+.container{
+    margin-top: 20em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+h1 span{
+    animation: animate 3s linear infinite;
+    font-size: 3.5em;
+}
+h1 span:nth-child(1){
+    animation-delay: 0s;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.25s;
+}
+h1 span:nth-child(3){
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(4){
+    animation-delay: 0.75s;
+}
+h1 span:nth-child(5){
+    animation-delay: 1s;
+}
+h1 span:nth-child(6){
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(7){
+    animation-delay: 1.5s;
+}
+h1 span:nth-child(8){
+    animation-delay: 1.75s;
+}
+h1 span:nth-child(9){
+    animation-delay: 2s;
+}
+h1 span:nth-child(10){
+    animation-delay: 2.25s;
+}
+h1 span:nth-child(11){
+    animation-delay: 2.5s;
+}
+@keyframes animate{
+    0%,100%{
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 5px #00b3ff,
+                     0 0 10px #00b3ff,
+                     0 0 20px #00b3ff,
+                     0 0 30px #00b3ff,
+                     0 0 40px #00b3ff,
+                     0 0 60px #00b3ff,
+                     0 0 80px #00b3ff,
+                     0 0 100px #00b3ff,
+                     0 0 120px #00b3ff,
+                     0 0 200px #00b3ff,
+                     0 0 300px #00b3ff;
+    }
+    5%,95%{
+        color:#111;
+        filter: blur(0px);
+        text-shadow: 0 0 10px none;
+    }
+}
+@media (min-width:380px) and (max-width:450px){
+    h1 span{
+        font-size: 35px;
+    }
+    .col-md-4:nth-child(odd){
+        display: none;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <section class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="oldi">
+                    <img src="https://az30.ru/wp-content/uploads/2019/01/DevOps-Consultant.jpg" width="340px"
+                        height="500px">
+                </div>
+                <div class="back">
+                    <div class="icons">
+                        <h2>
+                            INTELLIGENT
+                        </h2> <br><span class="text-info">Senior Developer</span>
+                        <div class="socialIcons">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/Boburshoh868/"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="https://t.me/INTILLEGENT"><i class="fa fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">    
+                        
+        </div>
+    </section>
+    <div class="clear-both"></div>
+    <section class="container">
+        <div class="matn">
+            <h1>
+                <span>I</span>
+                <span>N</span>
+                <span>T</span>
+                <span>E</span>
+                <span>L</span>
+                <span>L</span>
+                <span>I</span>
+                <span>G</span>
+                <span>E</span>
+                <span>N</span>
+                <span>T</span>
+            </h1>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('audioID').play();
+    document.removeEventListener('click', musicPlay);
+}
+    </script>
+</body>
+
+</html>
